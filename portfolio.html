@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя презентация</title>
+    <style>
+        /* Убираем отступы и делаем белый фон */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            height: 100%;
+            overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+        }
+
+        /* Контейнер для PDF, чтобы он был по центру */
+        .pdf-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px 0; /* Небольшой отступ сверху и снизу */
+            box-sizing: border-box;
+        }
+
+        /* Настройки для самого PDF-файла */
+        embed, iframe {
+            width: 100%;
+            max-width: 1200px; /* Максимальная ширина, чтобы не растягивался на весь экран */
+            height: 90vh; /* Высота 90% от высоты экрана (формат презентации) */
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Легкая тень для красоты */
+            border-radius: 8px; /* Закругленные углы */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pdf-container">
+        <!-- 
+        ⬇️ ВСТАВЬТЕ НАЗВАНИЕ ВАШЕГО PDF ФАЙЛА ВМЕСТО "my-presentation.pdf" 
+        Файл должен лежать в той же папке, что и этот index.html
+        -->
+        <embed src="Портфолио_Егор Бартули_графический дизайнер.pdf" type="application/pdf" />
+    </div>
+
+</body>
+</html>
